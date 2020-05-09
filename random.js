@@ -1,15 +1,13 @@
-var prize = "";
-
-switch (prize) {
-  case 1:
-    prize += "a trip for two to the Bahamas and ";
-  case 2:
-    prize += "a four piece furniture set.";
-    break;
-  case 3:
-    prize += "a smartwatch and ";
-  default:
-    prize += "tickets to the circus.";
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
 }
 
-console.log("You've won " + prize);
+var laugh = function(x) {
+    let daLaughs = ""
+    for (u = 1; u <= x; u++) {
+        daLaughs = daLaughs + "ha"
+    }
+    return daLaughs
+}
+
+emotions("happy", laugh)
